@@ -78,7 +78,7 @@ function ButtonEdit( {
 	return (
 		<div className={ blockClasses }>
 			<RichText
-				allowedFormats={ [] }
+				allowedFormats={ 'input' === element ? [] : undefined }
 				className={ buttonClasses }
 				disableLineBreaks={ 'input' === element }
 				onChange={ onChange }
